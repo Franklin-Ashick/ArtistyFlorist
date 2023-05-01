@@ -1,17 +1,9 @@
-# ArtistyFlorist
-Its A Flower And Plants Shoping System . In this Project Admin Can add delete and update Products. This Projects has real time data display in dashboard. 
-Languages Used
- -ASP.Net
- -C#
- -CSS
- -JavaScript
- 
-Pages
--Home Page
--Shoping Page
--Cart
--Payment
--Billing
--Recipt
--Admin DashBoard
-- Add, Delete, Update Page
+My project is a Flower and Plants Shopping System, which is a web-based application that allows users to browse, search, and purchase various types of flowers and plants online. The system also includes an admin dashboard where an authorized administrator can manage the products and their details, including adding, deleting, and updating product information.
+
+The system is built using ASP.Net, C#, CSS, and JavaScript. These languages allow for the creation of a dynamic and interactive user interface, with real-time data display on the dashboard.
+
+The project includes several pages, including the Home Page, Shopping Page, Cart, Payment, Billing, Receipt, and Admin Dashboard. The Home Page serves as the main landing page for the system and provides users with an overview of the available products. The Shopping Page allows users to browse and search for products based on various criteria, such as type and price range. The Cart page displays the items that the user has added to their cart and allows them to proceed to checkout. The Payment page allows users to input their payment information securely. The Billing page generates an invoice for the user's purchase, while the Receipt page provides a summary of the transaction details. Finally, the Admin Dashboard provides an interface for the authorized administrator to manage the products and their details, including adding, deleting, and updating product information.
+
+The Add, Delete, and Update pages allow the administrator to manage the products in the system. The Add Page allows the administrator to input the product details, validate the inputs, and save the product information to the database using an INSERT SQL statement. The Delete Page displays all the products and allows the administrator to delete a selected product by using a DELETE SQL statement. Finally, the Update Page displays the current product information and allows the administrator to modify it, validate the inputs, and save the updated product information to the database using an UPDATE SQL statement.
+
+Overall, ArtistyFlorist is designed to provide users with a seamless and enjoyable shopping experience while also providing an efficient and user-friendly interface for the administrator to manage the products in the system.
