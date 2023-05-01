@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Homepage.master.cs" Inherits="ArtistyFlorist.Homepage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Artsy Florist</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  
+
+  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="header__logo">
+                                <a href="Homepage.aspx">
+                                    <img src="img/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <nav class="header__menu">
+                                <ul>
+                                    <li class="active"><a href="Homepage.aspx">Home</a></li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="header__cart">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-heart"></i><span>1</span></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-bag"></i><span>3</span></a></li>
+                                </ul>
+                                <div class="header__top__right__auth">
+                                 <% if (Session["Username"] != null && !string.IsNullOrEmpty((string)Session["Username"])) { %>
+  
+                                    <a href="Homepage.aspx"><i class="fa fa-sign-out"></i>Logout</a>
+                                    <% }
+                                    else
+                                    { %>
+                                    <a href="Login.aspx"><i class="fa fa-user"></i>Login</a>
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="humberger__open">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer class="footer spad">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer__copyright">
+                                <div class="footer__copyright__text">
+                                    <p>
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                                        All rights reserved |Kavya Shree 
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    </p>
+                                </div>
+                                <div class="footer__copyright__payment">
+                                    <img src="img/payment-item.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer Section End -->
+
+            <!-- Js Plugins -->
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.nice-select.min.js"></script>
+            <script src="js/jquery-ui.min.js"></script>
+            <script src="js/jquery.slicknav.js"></script>
+            <script src="js/mixitup.min.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/main.js"></script>
+
+
+        </div>
+    </form>
+</body>
+</html>
